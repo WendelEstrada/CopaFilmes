@@ -1,13 +1,13 @@
 CopaFilmes
 ====================
 
-### Utilização
+### UtilizaÃ§Ã£o
 
-1. Faça o clone do projeto 'git clone https://github.com/WendelEstrada/CopaFilmes'
+1. FaÃ§a o clone do projeto 'git clone https://github.com/WendelEstrada/CopaFilmes'
 2. Entre na pasta do projeto e abra o arquivo Wes.CopaMundoFilmes.sln
-3. Ao abrir a solução, clicar com o botão direito sobre a na raiz da solução e selecionar a opção "Restore NuGet Packages"
-4. Para rodar o site basta clicar com o botão direto no projeto "Wes.CopaMundoFilmes.Presentation.Site", selecionar a opção "Set as StartUp Project" e aperta a tecla F5
+3. Ao abrir a soluÃ§Ã£o, clicar com o botÃ£o direito sobre a na raiz da soluÃ§Ã£o e selecionar a opÃ§Ã£o "Restore NuGet Packages"
+4. Para rodar o site basta clicar com o botÃ£o direto no projeto "Wes.CopaMundoFilmes.Presentation.Site", selecionar a opÃ§Ã£o "Set as StartUp Project" e apertar a tecla F5
 
 ### Testes
 
-Para realizar os testes, basta ir no menu "Test", selecionar a opção "Run" -> "All Tests"
+Para realizar os testes, basta ir no menu "Test", selecionar a opÃ§Ã£o "Run" -> "All Tests"
