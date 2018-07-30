@@ -3,9 +3,73 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{F46A5C2A-8ED8-4B2B-A09D-FC308FBAD2A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{793046A9-754F-49CE-B84A-ECD8EFEAA5B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{260E163D-5D4E-4368-9118-192FC0BFE9A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{41DCF562-BE3C-41D2-AFE1-3FF53E0DD6B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - CrossCutting", "4.1 - CrossCutting", "{19C85414-D109-4321-BA7A-7B0503E4CC75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wes.CopaMundoFilmes.Domain", "src\Wes.CopaMundoFilmes.Domain\Wes.CopaMundoFilmes.Domain.csproj", "{858D76B8-1242-4FEE-95C2-4DD09C104426}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - Data", "4.2 - Data", "{7F0FF616-7A8A-44D9-AABA-0F07C0A2B3FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wes.CopaMundoFilmes.Infra.Data", "src\Wes.CopaMundoFilmes.Infra.Data\Wes.CopaMundoFilmes.Infra.Data.csproj", "{EAE9A835-2F88-4D79-B643-46C7F1614CB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wes.CopaMundoFilmes.Domain.Test", "tests\Wes.CopaMundoFilmes.Domain.Test\Wes.CopaMundoFilmes.Domain.Test.csproj", "{00EE0169-A54A-438D-BAC0-50A6EECEB796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wes.CopaMundoFilmes.Infra.CrossCutting.IoC", "src\Wes.CopaMundoFilmes.Infra.CrossCutting.IoC\Wes.CopaMundoFilmes.Infra.CrossCutting.IoC.csproj", "{6911F5CC-1520-4ECB-8D50-94D9D42B4858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wes.CopaMundoFilmes.Presentation.Site", "src\Wes.CopaMundoFilmes.Presentation.Site\Wes.CopaMundoFilmes.Presentation.Site.csproj", "{91D2C841-F271-4FB1-8604-9AE1FBC34DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wes.CopaMundoFilmes.Application", "src\Wes.CopaMundoFilmes.Application\Wes.CopaMundoFilmes.Application.csproj", "{EEBCEFF6-4794-46AF-8288-7B5DE06E78D1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{858D76B8-1242-4FEE-95C2-4DD09C104426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858D76B8-1242-4FEE-95C2-4DD09C104426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858D76B8-1242-4FEE-95C2-4DD09C104426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858D76B8-1242-4FEE-95C2-4DD09C104426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE9A835-2F88-4D79-B643-46C7F1614CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE9A835-2F88-4D79-B643-46C7F1614CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE9A835-2F88-4D79-B643-46C7F1614CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE9A835-2F88-4D79-B643-46C7F1614CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00EE0169-A54A-438D-BAC0-50A6EECEB796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00EE0169-A54A-438D-BAC0-50A6EECEB796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00EE0169-A54A-438D-BAC0-50A6EECEB796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00EE0169-A54A-438D-BAC0-50A6EECEB796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6911F5CC-1520-4ECB-8D50-94D9D42B4858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6911F5CC-1520-4ECB-8D50-94D9D42B4858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6911F5CC-1520-4ECB-8D50-94D9D42B4858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6911F5CC-1520-4ECB-8D50-94D9D42B4858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D2C841-F271-4FB1-8604-9AE1FBC34DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D2C841-F271-4FB1-8604-9AE1FBC34DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D2C841-F271-4FB1-8604-9AE1FBC34DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D2C841-F271-4FB1-8604-9AE1FBC34DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBCEFF6-4794-46AF-8288-7B5DE06E78D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBCEFF6-4794-46AF-8288-7B5DE06E78D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBCEFF6-4794-46AF-8288-7B5DE06E78D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBCEFF6-4794-46AF-8288-7B5DE06E78D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19C85414-D109-4321-BA7A-7B0503E4CC75} = {41DCF562-BE3C-41D2-AFE1-3FF53E0DD6B1}
+		{858D76B8-1242-4FEE-95C2-4DD09C104426} = {260E163D-5D4E-4368-9118-192FC0BFE9A0}
+		{7F0FF616-7A8A-44D9-AABA-0F07C0A2B3FE} = {41DCF562-BE3C-41D2-AFE1-3FF53E0DD6B1}
+		{EAE9A835-2F88-4D79-B643-46C7F1614CB5} = {7F0FF616-7A8A-44D9-AABA-0F07C0A2B3FE}
+		{00EE0169-A54A-438D-BAC0-50A6EECEB796} = {260E163D-5D4E-4368-9118-192FC0BFE9A0}
+		{6911F5CC-1520-4ECB-8D50-94D9D42B4858} = {19C85414-D109-4321-BA7A-7B0503E4CC75}
+		{91D2C841-F271-4FB1-8604-9AE1FBC34DF5} = {F46A5C2A-8ED8-4B2B-A09D-FC308FBAD2A1}
+		{EEBCEFF6-4794-46AF-8288-7B5DE06E78D1} = {793046A9-754F-49CE-B84A-ECD8EFEAA5B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {537108D6-9644-4BE9-B3FB-5636FF81BC9C}

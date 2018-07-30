@@ -1,0 +1,57 @@
+﻿@using Newtonsoft.Json
+@using System.Web.Optimization
+@model Wes.CopaMundoFilmes.Application.ViewModel.CampeonatoViewModel
+@Styles.Render("~/Content/filme")
+
+@{
+    ViewBag.Title = "Campeonato de Filmes - Resultado Final";
+}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-lg-center">
+        <h6 class="titulo-campeonato">CAMPEONATO DE FILMES</h6>
+        <h2 class="titulo-resultado-final"><b>Resultado Final</b></h2>
+        <div class="col-lg-6">
+            <div class="col-2 text-right">
+                <hr />
+            </div>
+        </div>
+        <p class="titulo-descricao">Veja o resultado final do Campeonato de filmes de forma simples e rápida</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="numero-resultado">
+            <span>1º</span>
+        </div>
+        <div class="nome-primeiros-colocados">
+            <span>@Model.Campeao.PrimaryTitle</span>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="numero-resultado">
+            <span>2º</span>
+        </div>
+        <div class="nome-primeiros-colocados">
+            <span>@Model.Segundo.PrimaryTitle</span>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="numero-resultado">
+            <span>3º</span>
+        </div>
+        <div class="nome-primeiros-colocados">
+            <span>@Model.Terceiro.PrimaryTitle</span>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<div class="col-lg-12">
+    <pre>
+        @Html.Raw(JsonConvert.SerializeObject(Model, Formatting.Indented))
+    </pre>
+</div>

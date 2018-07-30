@@ -1,0 +1,57 @@
+﻿.filme-titulo {
+    background-color: white;
+    height: 80px;
+    width: 278px;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.filme-titulo-posicao {
+    padding-top: 20px;
+    font-size: small;
+}
+
+.texto-selecao {
+    font-size:x-large;
+    color: white;
+}
+
+.titulo-fase-selecao {
+    color: white;
+}
+
+.titulo-resultado-final {
+    color: white;
+}
+
+.titulo-descricao {
+    color: white;
+}
+
+.jumbotron {
+    background-color: dimgray;
+}
+
+.titulo-campeonato {
+    color: darkgray;
+}
+
+.numero-resultado {
+    color: white;
+    background-color: dimgray;
+    font-size: xx-large;
+    height: 80px;
+    width: 5%;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.nome-primeiros-colocados {
+    background-color: white;
+    vertical-align:middle;
+    width: 95%;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: x-large;
+}
