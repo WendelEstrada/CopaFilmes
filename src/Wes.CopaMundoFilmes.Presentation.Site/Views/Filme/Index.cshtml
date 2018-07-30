@@ -1,7 +1,6 @@
 ﻿@using System.Web.Optimization
 @model IEnumerable<Wes.CopaMundoFilmes.Application.ViewModel.FilmeViewModel>
 @Styles.Render("~/Content/filme")
-
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
 @{
@@ -9,10 +8,13 @@
 }
 
 <div class="jumbotron jumbotron-fluid">
-    <div class="container text-lg-center">
+    <div class="container text-lg-center text-md-center text-sm-center">
         <h6 class="titulo-campeonato">CAMPEONATO DE FILMES</h6>
-        <h2 class="titulo-fase-selecao"><b>Fase de Seleção</b></h2>
-        <hr />
+        <h2 class="titulo-fase-selecao">
+            <b>Fase de Seleção</b>
+            <br />
+            <label class="detalhe-titulo"></label>
+        </h2>
         <div class="titulo-descricao">
             Selecione 16 filmes que você deseja que entrem na competição e depois pressione o
             <p>botão Gerar Meu Campeonato para prosseguir.</p>
@@ -34,10 +36,10 @@
     <div id="divFilmesSelecionados" />
 }
     <div class="container">
-        <div class="row">
+        <div class="row align-content-center">
             @foreach (var filme in Model)
             {
-            <div class="col-md-3 col-sm-3 filme-titulo">
+            <div class="filme-titulo">
                 <div class="row">
                     <div class="checkbox col-sm-2 checkbox-posicao">
                         <label class="checkbox-label" style="font-size: 1.5em">
